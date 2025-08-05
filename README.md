@@ -100,7 +100,7 @@
 
 **核心技术**: `ImageCollection`, `map`, `updateMask`, `filter`
 
-**成果展示** forest_ndvi.ipynb</details>
+**成果展示** [forest_ndvi.ipynb](https://github.com/Yuanyuan2003/PythonGEE-practical-projects/blob/main/forest_NDVI.png)</details>
 
 ---
 
