@@ -69,20 +69,20 @@
     -   [x] 理解 `Feature` 和 `FeatureCollection`
     -   [x] 学习基础语法
     -   [x] 完成第一个地图
--   [ ] **Phase 2: 核心数据处理**
-    -   [ ] 影像数据的筛选、裁剪、拼接和计算
-    -   [ ] 矢量数据的创建、筛选和空间分析
-    -   [ ] `map` 和 `filter` 函数的应用
-    -   [ ] `reducer` 的原理与实践
+-   [x] **Phase 2: 核心数据处理**
+    -   [x] 影像数据的筛选、裁剪、拼接和计算
+    -   [x] 矢量数据的创建、筛选和空间分析
+    -   [x] `map` 和 `filter` 函数的应用
+    -   [x] `reducer` 的原理与实践
 -   [ ] **Phase 3: 遥感专题应用**
     -   [ ] 计算植被指数 (NDVI, EVI) 并进行时序分析
     -   [ ] 提取水体范围 (NDWI, MNDWI)
     -   [ ] 监督与非监督分类
     -   [ ] 计算地表温度 (LST)
 -   [ ] **Phase 4: GEE 进阶**
-    -   [ ] UI 设计与交互式 App 开发
-    -   [ ] GEE Python API 的使用
-    -   [ ] 结合 `geemap` 和 `Jupyter Notebook` 进行分析
+    -   [x] UI 设计与交互式 App 开发
+    -   [x] GEE Python API 的使用
+    -   [x] 结合 `geemap` 和 `Jupyter Notebook` 进行分析
 -   [ ] **Phase 5: 毕业项目**
     -   [ ] 设计并完成一个综合性项目（例如：多源数据融合实现虫害对作物生长的大面积灾害损失预测）
 
@@ -114,34 +114,6 @@
 在贡献之前，请确保你的代码在 GEE 中可以无误运行。
 
 
-
----
-
-## 📚 学习难点与解决方案 (Q&A)
-
-这里汇总了我在学习过程中遇到的“拦路虎”以及对应的解决方法，希望能帮你节省一些调试的时间。
-
-<details>
-<summary><strong>Q1: GEE 账号注册不顺利怎么办？</strong></summary>
-
-**办法**：
-*由于网络环境问题，建议使用稳定可靠的科学上网工具进行访问和注册 
-
-</details>
-
-<details>
-<summary><strong>Q2: 在本地 Python 环境 (如 VS Code) 中运行 `ee.Initialize()` 时出现授权失败？</strong></summary>
-
-**原因**：
-这通常是由于系统用户对 GEE 认证凭证文件夹的写入权限不足导致的。该文件夹通常位于：
-**Windows**: `C:\Users\USERNAME\.config\earthengine\credentials`
-**Linux**: `/home/USERNAME/.config/earthengine/credentials` 
-**MacOS**: `/Users/USERNAME/.config/earthengine/credentials` 
-
-**办法 (以MacOS为例)**：
-打开终端，运行以下命令赋予当前用户对该文件夹的所有权，然后再重新执行Python脚本进行授权。
-```bash
-sudo chown -R $(whoami) ~/.config
 
 ---
 ## Google Earth Engine 学习难点及解决办法
@@ -413,3 +385,29 @@ Map
 
 *最后更新: 2025年8月*  
 
+
+## 📚 学习难点与解决方案 (Q&A)
+
+这里汇总了我在学习过程中遇到的“拦路虎”以及对应的解决方法，希望能帮你节省一些调试的时间。
+
+<details>
+<summary><strong>Q1: GEE 账号注册不顺利怎么办？</strong></summary>
+
+**办法**：
+*由于网络环境问题，建议使用稳定可靠的科学上网工具进行访问和注册 
+
+</details>
+
+<details>
+<summary><strong>Q2: 在本地 Python 环境 (如 VS Code) 中运行 `ee.Initialize()` 时出现授权失败？</strong></summary>
+
+**原因**：
+这通常是由于系统用户对 GEE 认证凭证文件夹的写入权限不足导致的。该文件夹通常位于：
+**Windows**: `C:\Users\USERNAME\.config\earthengine\credentials`
+**Linux**: `/home/USERNAME/.config/earthengine/credentials` 
+**MacOS**: `/Users/USERNAME/.config/earthengine/credentials` 
+
+**办法 (以MacOS为例)**：
+打开终端，运行以下命令赋予当前用户对该文件夹的所有权，然后再重新执行Python脚本进行授权。
+```bash
+sudo chown -R $(whoami) ~/.config
