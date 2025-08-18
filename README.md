@@ -143,9 +143,10 @@
 ```bash
 sudo chown -R $(whoami) ~/.config
 
-# Google Earth Engine 学习难点及解决办法
 
-> 本章节整理了在使用 Google Earth Engine (GEE) 过程中遇到的常见问题及解决方案，帮助您快速上手和解决实际应用中的困难。
+
+## Google Earth Engine 学习难点及解决办法
+- 本章节整理了在使用 Google Earth Engine (GEE) 过程中遇到的常见问题及解决方案，帮助您快速上手和解决实际应用中的困难。
 
 ## 📋 目录
 
