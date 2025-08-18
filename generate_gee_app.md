@@ -8,7 +8,7 @@
 - 自动在地图中显示该区域边界
 - 地图自动缩放和聚焦
 - 支持 GEE 一键发布成 Web App
-代码```python
+```python
 // 引用二级行政边界（可选国家）var admin2 = ee.FeatureCollection('YOUR/COLLECTION/ID');
 // 主面板 UIvar mainPanel = ui.Panel({style: {width: '600px'}});mainPanel.add(ui.Label({  value: '区域选择界面模板',  style: {'fontSize': '24px', 'margin': '10px 5px'}}));
 // 下拉菜单区域面板var admin2Panel = ui.Panel({layout: ui.Panel.Layout.flow('vertical')});mainPanel.add(admin2Panel);
